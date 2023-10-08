@@ -1,0 +1,41 @@
+﻿<!--(C) 2020 Moses Odhiambo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="zid.png">
+    <title>Gallino en el camino</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="lib/112.1/three.min.js"></script>
+    <script src="lib/112.1/GLTFLoader.min.js"></script>
+    <script src="lib/112.1/OrbitControls.min.js"></script>
+    <script src="lib/112.1/BufferGeometryUtils.min.js"></script>
+    <script src="lib/stats/stats.min.js"></script>
+    <script src="lib/sweetalert/sweetalert.min.js"></script>
+</head>
+<body onload = "firstRun()">
+    <div id="score"></div>
+    <div id = "splash">
+        <div id = "title">
+            Gallina en el camino<br/>Hernández Escobar Evelin Carolina ,<br/> 
+            Candelario Mora Luis Eduardo,<br/> García Neri Mateo<br/>
+            ,Basurto Castillo Johana Celeste<br/>,Zurita Ortiz Elizabeth<br/>Grupo 604 <br/>Disfruten el juego
+        </div>
+        <div id = "loading">
+            <div class = "main letter">Cargando</div>
+            <div class = "period1 letter">.</div>
+            <div class = "period2 letter">.</div>
+            <div class = "period3 letter">.</div>
+        </div>
+        <div id = "instructions">Usa las flechas para moverte/ tus dedos<br> alrededor</div>
+        <div id = "play">
+            Jugar
+            <button id = "pressPlay" disabled onclick = "init()"></button>
+        </div>
+    </div>
+    <button id="restart" onclick = "init()">Jugar de Nuevo</button>
+    <script src="index.js"></script>
+</body>
+</html>
